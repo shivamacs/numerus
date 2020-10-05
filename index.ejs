@@ -1,0 +1,147 @@
+<html>
+    <head>
+        <title><%= pageName %></title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="menu-content-container">
+                <div class="menu-group" id="font-menu-group">
+                    <div class="menu-row">
+                        <select id="font-family">
+                            <option value="Antic Regular">Antic Regular</option>
+                            <option value="Arial">Arial</option>
+                            <option value="Courier New">Courier New</option>
+                            <option value="Electrolize">Electrolize</option>
+                            <option value="Kalam">Kalam</option>
+                            <option value="Product Sans Bold">Product Sans Bold</option>
+                            <option value="Product Sans Italic">Product Sans Italic</option>
+                            <option value="Product Sans Regular">Product Sans Regular</option>
+                            <option value="Times New Roman">Times New Roman</option>
+                        </select>
+                        <select id="font-size">
+                            <option value="8">8</option>
+                            <option value="10">10</option>
+                            <option value="12">12</option>
+                            <option value="14">14</option>
+                            <option value="16">16</option>
+                            <option value="18">18</option>
+                            <option value="20">20</option>
+                            <option value="22">22</option>
+                        </select>
+                    </div>
+                    <div class="menu-row">
+                        <button id="bold" style="font-family: 'Times New Roman'; font-size: 20px; font-weight: bolder;">B</button>
+                        <button id="italic" style="font-family: 'Courier New'; font-size: 20px; font-style: italic;">I</button>
+                        <button id="underline" style="font-family: 'Arial'; font-size: 20px; font-weight: bolder; text-decoration: underline">U</button>
+                        <input id="bg-color" type="color" value="#000000">
+                        <input id="text-color" type="color" value="#FFFFFF">
+                    </div>
+                </div>
+                <div class="menu-group" id="alignment-menu-group">
+                    <div class="menu-row">
+                        <button class="valign" id="top-align" type="button" prop-val="start">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+                                <g><rect style="fill: white;" width="512" height="40"/></g>
+                                <g><polygon style="fill: white;" points="256.08,83.795 152.938,185.778 181.062,214.222 236,159.901 236,512 276,
+                                    512 276,160.285 329.857,214.142 358.143,185.858"/></g>
+                            </svg>
+                        </button>
+                        <button class="valign" id="middle-align" type="button" prop-val="center">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+                            <g><rect style="fill: white;" y="236" width="512" height="40"/></g>
+                            <g><polygon style="fill: white;" points="256.08,319.795 152.938,421.778 181.062,450.222 236,395.901 236,512 276,512 276,396.285 329.857,450.142 
+                                358.143,421.858"/></g>
+                            <g><polygon style="fill: white;" points="329.862,61.854 276,115.681 276,0 236,0 236,116.064 181.058,61.773 152.942,90.227 256.08,192.14 
+                                358.138,90.146"/></g>
+                        </svg>
+                        </button>
+                        <button class="valign" id="bottom-align" type="button" prop-val="end">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+                                <g><rect style="fill: white;" y="472" width="512" height="40"/></g>
+                                <g><polygon style="fill: white;" points="329.857,297.858 276,351.715 276,0 236,0 236,352.099 181.062,297.778 152.938,326.222 256.08,428.205 
+                                    358.143,326.142"/></g>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="menu-row">
+                        <button class="halign" id="left-align" type="button" prop-val="start">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path style="fill: white;" d="M12.83 352h262.34A12.82 12.82 0 0 0 288 339.17v-38.34
+                                A12.82 12.82 0 0 0 275.17 288H12.83A12.82 12.82 0 0 0 0 300.83v38.34
+                                A12.82 12.82 0 0 0 12.83 352zm0-256h262.34A12.82 12.82 0 0 0 288 83.17
+                                V44.83A12.82 12.82 0 0 0 275.17 32H12.83A12.82 12.82 0 0 0 0 44.83v38.34
+                                A12.82 12.82 0 0 0 12.83 96z
+                                M432 160
+                                H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0 
+                                256H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z"/>
+                            </svg>
+                        </button>
+                        <button class="halign" id="center-align" type="button" prop-val="center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path style="fill: white;" d="M432 160
+                                H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0 256
+                                H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z
+                                M108.1 96h231.81A12.09 12.09 0 0 0 352 83.9
+                                V44.09A12.09 12.09 0 0 0 339.91 32H108.1
+                                A12.09 12.09 0 0 0 96 44.09
+                                V83.9A12.1 12.1 0 0 0 108.1 96zm231.81 256
+                                A12.09 12.09 0 0 0 352 339.9v-39.81
+                                A12.09 12.09 0 0 0 339.91 288
+                                H108.1
+                                A12.09 12.09 0 0 0 96 300.09v39.81a12.1 12.1 0 0 0 12.1 12.1z"/>
+                            </svg>
+                        </button>
+                        <button class="halign" id="right-align" type="button" prop-val="end">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path style="fill: white;" d="M16 224h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16
+                                H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16zm416 192
+                                H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm3.17-384
+                                H172.83A12.82 12.82 0 0 0 160 44.83v38.34
+                                A12.82 12.82 0 0 0 172.83 96h262.34
+                                A12.82 12.82 0 0 0 448 83.17
+                                V44.83A12.82 12.82 0 0 0 435.17 32zm0 256
+                                H172.83A12.82 12.82 0 0 0 160 300.83v38.34
+                                A12.82 12.82 0 0 0 172.83 352h262.34
+                                A12.82 12.82 0 0 0 448 339.17v-38.34
+                                A12.82 12.82 0 0 0 435.17 288z"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="formula-bar">
+                <input type="text" id="range">
+                <div id="separator">fx</div>
+                <input type="text" id="formula">
+            </div>
+            <div class="content">
+                <div id="tl-cell"></div>
+                <div class="first-row">
+                    <% for(let j = 0; j < columns; j++) { %>
+                        <div class="cell column-header" id='<%= String.fromCharCode("A".charCodeAt(0) + j) %>' data-y="<%= j %>"><%= String.fromCharCode("A".charCodeAt(0) + j) %></div>
+                    <% } %>
+                </div>
+                <div class="first-col">
+                    <% for(let i = 0; i < rows; i++) { %>
+                        <div class="row-header" id="<%= i %>"><%= i + 1 %></div>
+                    <% } %>
+                </div>
+                <div class="grid">
+                    <% for(let i = 0; i < rows; i++) { %>
+                        <div class="row" data-x="<%= i %>">
+                            <% for(let j = 0; j < columns; j++) { %>
+                                <span class="cell data-cell" role="textbox" tabIndex="0" data-x="<%= i %>" data-y="<%= j %>" contenteditable="false"></span>
+                            <% } %>
+                        </div>
+                    <% } %>
+                </div>
+            </div>
+            <div class="sheets-bar">
+                <div id="curr-sheet">Sheet 1</div>
+                <div id="add-sheet">+</div>
+            </div>
+        </div>
+        <script src="renderer.js"></script>
+    </body>
+</html>
